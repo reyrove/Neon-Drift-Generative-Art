@@ -1,190 +1,169 @@
-# Neon-Drift-Generative-Art
+# Neon Drift — Generative Art
 
-[![Live Demo](https://img.shields.io/badge/demo-live-green?style=for-the-badge)](https://reyrove.github.io/Neon-Drift-Generative-Art)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-
-> **Generative neon art with drifting lines, shapes, and vibrant colors.** Each refresh creates a unique composition of 100–300 glowing elements that drift across the canvas, resembling neon lights in motion.
-
-## 🎨 Live Demo
-
-<div align="center">
-  <a href="https://reyrove.github.io/Neon-Drift-Generative-Art" target="_blank">
-    <img src="demo-screenshot.jpg" alt="Neon Drift Website Demo" width="800" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.4);"/>
-  </a>
-  <br><br>
-  <a href="https://reyrove.github.io/Neon-Drift-Generative-Art" target="_blank">
-    <img src="https://img.shields.io/badge/🌐_View_Live_Demo-0a0a0a?style=for-the-badge&logo=githubpages&logoColor=white&color=ff6b9d" alt="View Live Demo" width="300"/>
-  </a>
-  <br>
-  <em>Click the image or button to experience the generative art</em>
-</div>
-
-## 👕 Apparel Preview
-
-<div align="center">
-  <img src="Neon-Drift.jpg" alt="Neon Drift on T-Shirt" width="600" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);"/>
-  <br>
-  <em>Neon Drift artwork printed on a T-shirt</em>
-</div>
-
-## ✨ Features
-
-- **100–300 Elements** — Each composition features a random number of glowing elements
-- **3 Shape Modes** — Lines, Ellipses, or Rectangles
-- **Neon Colors** — Vibrant RGB colors in the 150–255 range
-- **Drift Motion** — Each element subtly shifts position across the canvas
-- **Color Gradients** — Smooth transitions between neon hues
-- **Random Background** — Unique contrasting background color
-- **Save & Share** — Download as PNG
-- **Apparel Mode** — Preview artwork on a T-shirt mockup
-- **Responsive** — Works on desktop, tablet, and mobile
-- **Pure p5.js** — Built with the creative coding library
-- **Keyboard Shortcuts**:
-  - `R` — Regenerate
-  - `S` — Save image
-  - `T` — Toggle apparel view
-
-## 🎨 Artwork Details
-
-| Parameter | Range | Description |
-|-----------|-------|-------------|
-| **Number of Elements** | 100–300 | Total elements in composition |
-| **Shapes** | 3 options | Lines, Ellipses, Rectangles |
-| **Color Range** | 150–255 | Neon RGB values |
-| **Background** | 0–255 | Random contrasting color |
-| **Stroke Weight** | Variable | Based on canvas size |
-| **Drift Speed** | Random | Subtle movement per element |
-
-## 🎯 Shape Modes
-
-| Mode | Description |
-|------|-------------|
-| **0 — Lines** | Classic drifting lines with neon glow |
-| **1 — Ellipses** | Organic circular shapes in motion |
-| **2 — Rectangles** | Geometric blocks with neon color |
-
-## 🚀 Quick Start
-
-### Local Development
-
-```bash
-# Clone the repository
-git clone https://github.com/reyrove/Neon-Drift-Generative-Art.git
-
-# Navigate to the directory
-cd Neon-Drift-Generative-Art
-
-# Open in browser
-open index.html
-# or use a live server
-```
-
-### Deploy to GitHub Pages
-
-1. Push to GitHub
-2. Go to Settings → Pages
-3. Select branch `main` and root folder
-4. Your site will be live at `https://reyrove.github.io/Neon-Drift-Generative-Art`
-
-## 🧠 How It Works
-
-The artwork is generated using p5.js with a deterministic approach. Every refresh:
-
-1. **Setup**:
-   - Random canvas size (responsive to container)
-   - Random background color
-   - Random number of elements (100–300)
-   - Random shape mode (0–2)
-   - Random starting positions and deltas
-
-2. **Generation**:
-   - Start with random endpoint positions
-   - Each element has a slight drift velocity
-   - Colors smoothly transition through neon spectrum
-   - Elements bounce off canvas edges
-
-3. **Rendering**:
-   - Each element drawn with neon-colored stroke
-   - Stroke weight varies for depth effect
-   - Elements positioned based on drift calculations
-   - Creates a glowing, dynamic feel
-
-## 📁 File Structure
-
-```
-Neon-Drift-Generative-Art/
-├── index.html          # Main application (all-in-one)
-├── Neon-Drift.jpg      # T-shirt mockup image
-├── fav.svg             # Favicon
-├── demo-screenshot.jpg # Website demo screenshot
-├── README.md           # This file
-└── LICENSE             # MIT License
-```
-
-## 🛠️ Tech Stack
-
-- **p5.js** — Creative coding library
-- **Canvas API** — 2D rendering
-- **CSS Flexbox/Grid** — Responsive layout
-- **GitHub Pages** — Hosting
-
-## 🎯 Interactive Controls
-
-| Action | Keyboard | Button |
-|--------|----------|--------|
-| Regenerate | `R` | Click "regenerate" |
-| Save Image | `S` | Click "regenerate" |
-| Toggle Apparel | `T` | Click "apparel" |
-
-## 🎨 The Creative Process
-
-### Neon Color Palette
-Each composition uses vibrant RGB colors in the 150–255 range, creating a true neon aesthetic. Colors smoothly transition between elements for a gradient effect.
-
-### Drift Motion
-Every element in the composition has a unique drift velocity, causing it to slowly move across the canvas. This creates a sense of motion and energy, as if the neon lights are alive.
-
-### Shape Variety
-With three distinct shape modes (lines, ellipses, rectangles), each refresh can produce dramatically different visual styles while maintaining the neon drift theme.
-
-### Random Background
-A randomly generated dark or light background provides contrast, making the neon colors pop and creating a different mood with each refresh.
-
-## 📱 Responsive Design
-
-The application automatically adapts to:
-- Desktop screens
-- Tablets
-- Mobile phones
-- Landscape orientation
-- Various aspect ratios
-- Small screens (down to 380px wide)
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-- Fork the repository
-- Create a feature branch
-- Submit a pull request
-
-### Ideas for Contributions:
-- New shape modes
-- Additional color palettes
-- Animation features
-- Interactive controls
-- Performance optimizations
-- More apparel mockups
-
-## 📄 License
-
-MIT License — see [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Created with p5.js
-- Inspired by neon art and motion graphics
-- Special thanks to the creative coding community
+> A seed-based generative system for drifting-line compositions.  
+> A reproducible catalogue of computational drift studies.
 
 ---
 
-**Built with 💜 and neon dreams**
+## What is this?
+
+**Neon Drift** is a generative design system built on accumulation and drift. A single line travels through the field, bouncing off its edges, changing its trajectory with each pass. The line is redrawn between one and three hundred times — each stroke slightly shifted, slightly recoloured — until the accumulated strokes form a luminous cloud of neon.
+
+Every artwork in this catalogue is defined by a single numeric seed. The same seed always produces the identical composition — making each piece **traceable, reproducible, and licensable** across textile, print, and apparel applications.
+
+Named for the drift of a line that never stops moving, **Neon Drift** reframes accumulation as a textile.
+
+---
+
+## Live
+
+🌐 **[View the catalogue →](https://reyrove.github.io/Neon-Drift/)**
+
+---
+
+## The System
+
+The generator is a single-layer system — a drifting shape whose positions, sizes, colours, and strokes are all seeded:
+
+| Layer | Description |
+|-------|-------------|
+| **Ground** | A seeded dark RGB background, computed to contrast with the neon strokes. |
+| **Drift** | One shape (line, ellipse, or rectangle) redrawn 100–300 times, its position updated between each pass. |
+
+Both layers are driven by the same seed, ensuring deterministic output.
+
+### Parameters
+
+- **Line count** — 100 to 300 strokes
+- **Shape mode** — 0 = lines, 1 = ellipses, 2 = rectangles
+- **Initial colour** — `r: 190–255`, `g: 190–255`, `b: 180–255` (neon range)
+- **Colour drift** — ±10 per stroke, constrained to `[150, 255]`
+- **Position drift** — seeded deltas, up to 20% of the canvas width
+- **Bounds behaviour** — reflects off all four edges
+- **Stroke weight** — `w / 1000` to `w / 500`, seeded
+- **Background** — a seeded RGB triplet
+
+---
+
+## Structure
+
+```
+Neon-Drift/
+├── index.html              ← Full catalogue (single-file)
+├── images/
+│   ├── fav.svg
+│   ├── neondrift-tote.png
+│   ├── neondrift-cushion.png
+│   └── ...
+├── Neon-Drift.jpg          ← Apparel mockup
+└── README.md
+```
+
+The entire project is contained in a single `index.html` — no build step, no dependencies, no framework. Open it in any modern browser.
+
+---
+
+## Features
+
+- **Seed-based generation** — every composition is deterministic and reproducible
+- **Live catalogue** — cover, statement, plate, surfaces, process, archive, commission sections
+- **Multiple surfaces** — print, scarf, textile, wallpaper — all rendered from the same seed
+- **Archive of 8 seeds** — click any plate to load it into the main view
+- **PNG export** — download any composition directly from the browser
+- **Keyboard shortcuts** — `R` for new seed, `S` to save
+- **Legal modal** — licensing, terms, and credits built in
+- **Responsive** — works on desktop, tablet, and mobile
+- **Mobile-first navbar** — horizontally scrollable with fade hint
+
+---
+
+## Usage
+
+### Generate a new composition
+
+Click **New Seed** or press `R`.
+
+### Download the current composition
+
+Click **Download** or press `S`.
+
+### Load a seed from the archive
+
+Click any plate in the **Archive** section.
+
+---
+
+## Color System
+
+Every composition is drawn from two seeded sources:
+
+- **Background** — a fully random RGB triplet, computed once per seed. Because the neon strokes are always bright, the background can be anything from deep shadow to mid-tone.
+- **Strokes** — a neon RGB value that starts in the range `[190, 255]` for red and green, `[180, 255]` for blue, then drifts by up to ±10 per stroke while remaining constrained to `[150, 255]`. This keeps the composition luminous but never washed out.
+
+Because both the background and the drift are seeded, no two compositions share the same rhythm of line and hue.
+
+---
+
+## Technical Notes
+
+- Pure vanilla JavaScript — no libraries
+- Canvas 2D rendering
+- Custom xorshift random generator for deterministic seeds
+- Device-pixel-ratio aware rendering
+- Fully static rendering — one seed produces one composition, no animation loops
+- Single `renderStatic()` function drives the cover, plate, framed print, all four surfaces, and all eight archive thumbnails
+- p5.js `ellipse(x, y, w, h)` and `rect(x, y, w, h)` semantics preserved exactly in the Canvas 2D implementation
+- `prefers-reduced-motion` respected
+
+---
+
+## About
+
+**Neon Drift** is a project by [Reyhaneh Daneshdoost](https://reyrove.github.io/) — an Iranian-born artist working at the intersection of classical textile logic and generative systems.
+
+The work begins with a simple observation: the woven surface — repetitive, mathematically structured, infinitely variable — has always been a form of computation, long before computers.
+
+**Neon Drift** is an attempt to render that logic visible.
+
+> *A line that never stops moving leaves a trace of everywhere it has been.*
+
+---
+
+## Licensing
+
+All compositions are seed-documented and available for licensing across textile, surface, and apparel applications.
+
+For commercial use, custom editions, or exclusive rights:
+
+📧 **reyhanehdaneshdoost@gmail.com**
+
+See the **Licensing** section in the live catalogue for details.
+
+---
+
+## Links
+
+- 🌐 [Website](https://reyrove.github.io/)
+- 📷 [Instagram](https://www.instagram.com/rey._.rove/)
+- 💼 [LinkedIn](https://www.linkedin.com/in/reyhaneh-daneshdoost-730481160/)
+- 🐦 [X](https://x.com/reyrove)
+
+---
+
+## Credits
+
+**Design & Generative System**  
+Reyhaneh Daneshdoost
+
+**Typefaces**  
+Cormorant Garamond · DM Mono
+
+**Edition**  
+Neon Drift — Autumn 2026
+
+---
+
+<p align="center">
+  <em>Generative Drifting Line</em><br />
+  <sub>© Reyrove Studio · All compositions reproducible by seed</sub>
+</p>
